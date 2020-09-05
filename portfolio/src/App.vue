@@ -16,6 +16,13 @@
 
         <v-spacer></v-spacer>
 
+        <div
+          id="list"
+        >
+          <router-link class="router" to="/">Home</router-link>
+          <router-link class="router" to="/about">About</router-link>
+        </div>
+
         <v-app-bar-nav-icon
           id="ham"
           @click.stop="drawer = !drawer"

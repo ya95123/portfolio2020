@@ -1,10 +1,60 @@
+@charset "UTF-8";
 @media (max-width: 1024px) {
+  #app #navbar #list {
+    display: none;
+  }
   #app #navbar #ham {
     display: block;
   }
 }
 
 @media (min-width: 1025px) {
+  #app #navbar #list {
+    display: block;
+  }
+  #app #navbar #list .router {
+    text-decoration: none;
+    color: #131313;
+    margin-left: 2rem;
+    padding-bottom: 0.25rem;
+    position: relative;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    /* !轉場：往右長長 */
+    /* !回場：往右變透明 */
+  }
+  #app #navbar #list .router:focus {
+    color: #FF5685;
+  }
+  #app #navbar #list .router::before {
+    content: '';
+    width: 0;
+    height: 0.13rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+  #app #navbar #list .router:hover::before {
+    width: 100%;
+    background: #6AC7E6;
+  }
+  #app #navbar #list .router::after {
+    content: '';
+    width: 0;
+    height: 0.13rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #6AC7E6;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+  #app #navbar #list .router:hover::after {
+    width: 100%;
+    background: transparent;
+  }
   #app #navbar #ham {
     display: none;
   }

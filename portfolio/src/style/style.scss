@@ -3,6 +3,9 @@
 @media (max-width: 1024px) { 
   #app{
     #navbar{
+      #list{
+        display: none;
+      }
       #ham{
         display: block;
       }
@@ -14,6 +17,51 @@
 @media (min-width: 1025px) { 
  #app{
    #navbar{
+     #list{
+       display: block;
+        .router{
+          text-decoration: none;
+          color: #131313;
+          margin-left: 2rem;
+          padding-bottom: 0.25rem;
+          position: relative;
+          transition: 0.3s ease;
+          &:focus{
+            color: #FF5685;
+          }
+          &::before{
+            content: '';
+            width: 0;
+            height: 0.13rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+          }
+            /* !轉場：往右長長 */
+            &:hover::before{
+            width: 100%;
+            background: #6AC7E6;
+          }
+
+          &::after{
+            content: '';
+            width: 0;
+            height: 0.13rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: #6AC7E6;
+            transition: width 0.3s ease;
+          }
+
+          /* !回場：往右變透明 */
+          &:hover::after{
+            width: 100%;
+            background:transparent;
+          }
+        }
+     }
      #ham{
       display: none;
     }
