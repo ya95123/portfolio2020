@@ -1,3 +1,35 @@
-#app{
 
+// 平板尺寸以下
+@media (max-width: 1024px) { 
+  #app{
+    #navbar{
+      #ham{
+        display: block;
+      }
+    }
+  }
+ }
+
+//  電腦尺寸以上
+@media (min-width: 1025px) { 
+ #app{
+   #navbar{
+     #ham{
+      display: none;
+    }
+   }
+ }
+}
+
+// 通用
+html,body{
+  width: 100vw;
+  height: 100vh;
+  // 為了把原始 Scroll bar 去掉
+  overflow: hidden;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
 }
