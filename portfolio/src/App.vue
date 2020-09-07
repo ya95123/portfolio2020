@@ -11,7 +11,7 @@
         app
       >
         <v-toolbar-title>
-          Alfred Dai 個人作品集
+          <strong>Alfred Dai 個人作品集</strong>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
