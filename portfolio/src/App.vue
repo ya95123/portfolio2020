@@ -23,7 +23,7 @@
             <v-icon class="list-icon">mdi-code-tags</v-icon>
             網頁設計
           </router-link>
-          <router-link class="router" to="/about">
+          <router-link class="router" to="/pic">
             <v-icon class="list-icon">mdi-feather</v-icon>
             圖文設計
           </router-link>
@@ -56,7 +56,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/about">
+          <v-list-item to="/pic">
             <v-list-item-action>
               <v-icon>mdi-feather</v-icon>
             </v-list-item-action>
