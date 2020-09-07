@@ -29,11 +29,12 @@ $bBlue:#6AC7E6;
           text-decoration: none;
           color: #131313;
           margin-left: 2rem;
-          padding-bottom: 0.25rem;
+          padding-bottom: 0.4rem;
           position: relative;
           transition: 0.3s ease;
           &:focus{
             color: $bRed;
+            font-weight: 700;
           }
           &::before{
             content: '';
@@ -65,6 +66,13 @@ $bBlue:#6AC7E6;
           &:hover::after{
             width: 100%;
             background:transparent;
+          }
+          
+          .list-icon{
+            color: $bBlue;
+            &:focus{
+              color: $bRed;
+            }
           }
         }
      }

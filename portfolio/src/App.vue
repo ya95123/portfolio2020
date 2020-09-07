@@ -19,8 +19,14 @@
         <div
           id="list"
         >
-          <router-link class="router" to="/">Home</router-link>
-          <router-link class="router" to="/about">About</router-link>
+          <router-link class="router" to="/">
+            <v-icon class="list-icon">mdi-code-tags</v-icon>
+            網頁設計
+          </router-link>
+          <router-link class="router" to="/about">
+            <v-icon class="list-icon">mdi-feather</v-icon>
+            圖文設計
+          </router-link>
         </div>
 
         <v-app-bar-nav-icon
@@ -40,24 +46,24 @@
         <v-list dense>
           <v-list-item to="/">
             <v-list-item-action>
-              <v-icon>mdi-home</v-icon>
+              <v-icon>mdi-code-tags</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
               <v-list-item-title>
-                Home
+                網頁設計
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
           <v-list-item to="/about">
             <v-list-item-action>
-              <v-icon>mdi-email</v-icon>
+              <v-icon>mdi-feather</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
               <v-list-item-title>
-                Contact
+                圖文設計
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>

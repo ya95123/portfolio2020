@@ -16,7 +16,7 @@
     text-decoration: none;
     color: #131313;
     margin-left: 2rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.4rem;
     position: relative;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
@@ -25,6 +25,7 @@
   }
   #app #navbar #list .router:focus {
     color: #FF5685;
+    font-weight: 700;
   }
   #app #navbar #list .router::before {
     content: '';
@@ -54,6 +55,12 @@
   #app #navbar #list .router:hover::after {
     width: 100%;
     background: transparent;
+  }
+  #app #navbar #list .router .list-icon {
+    color: #6AC7E6;
+  }
+  #app #navbar #list .router .list-icon:focus {
+    color: #FF5685;
   }
   #app #navbar #ham {
     display: none;
