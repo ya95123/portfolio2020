@@ -6,7 +6,7 @@ $bOrange:#FEB25E;
 $bBlue:#6AC7E6;
 
 // 平板尺寸以下
-@media (max-width: 1024px) { 
+@media (max-width: 960px) { 
   #app{
     #navbar{
       #list{
@@ -20,7 +20,7 @@ $bBlue:#6AC7E6;
  }
 
 //  電腦尺寸以上
-@media (min-width: 1025px) { 
+@media (min-width: 961px) { 
  #app{
    #navbar{
      #list{
