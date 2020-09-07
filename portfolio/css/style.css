@@ -88,3 +88,8 @@ html, body {
   width: 100%;
   height: 56px;
 }
+
+#app .spacerB {
+  width: 100%;
+  height: 36px;
+}

@@ -5,9 +5,10 @@
     >
       <v-app-bar
         id="navbar"
-        color="transparent"
+        color="white"
         fixed
         flat
+        elevate-on-scroll
         app
       >
         <v-toolbar-title>
