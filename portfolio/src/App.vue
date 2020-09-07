@@ -70,13 +70,14 @@
         </v-list>
       </v-navigation-drawer>
 
+      <!-- navbar spacer -->
+      <div class="spacerT"></div>
+
       <v-footer
         id="footer"
+        class="d-flex justify-center align-center"
         color="transparent"
-        app
       >
-        <v-spacer></v-spacer>
-
         <span>&copy; {{ new Date().getFullYear() }}</span>
       </v-footer>
 

@@ -77,3 +77,14 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+#app #footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+
+#app .spacerT {
+  width: 100%;
+  height: 56px;
+}
