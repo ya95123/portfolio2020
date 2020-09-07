@@ -1,3 +1,9 @@
+// 顏色
+$bPink:#FFC4C8;
+$bRed:#FF5685;
+$bYellow:#FED154;
+$bOrange:#FEB25E;
+$bBlue:#6AC7E6;
 
 // 平板尺寸以下
 @media (max-width: 1024px) { 
@@ -27,7 +33,7 @@
           position: relative;
           transition: 0.3s ease;
           &:focus{
-            color: #FF5685;
+            color: $bRed;
           }
           &::before{
             content: '';
@@ -41,7 +47,7 @@
             /* !轉場：往右長長 */
             &:hover::before{
             width: 100%;
-            background: #6AC7E6;
+            background: $bBlue;
           }
 
           &::after{
@@ -51,7 +57,7 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            background: #6AC7E6;
+            background: $bBlue;
             transition: width 0.3s ease;
           }
 
