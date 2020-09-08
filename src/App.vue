@@ -1,8 +1,8 @@
 <template>
-  <vue-scroll>
-    <v-app
-      id="app"
-    >
+  <v-app
+    id="app"
+  >
+    <vue-scroll>
       <v-app-bar
         id="navbar"
         color="white"
@@ -83,8 +83,8 @@
       </v-footer>
 
       <router-view/>
-    </v-app>
-  </vue-scroll>
+    </vue-scroll>
+  </v-app>
 </template>
 
 <script>
