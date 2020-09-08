@@ -17,11 +17,11 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" class="text-center">網頁切版</v-col>
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="4" v-for="(t,idx) in type2" :key="idx">
           <v-card>
-            <v-img src="../assets/web/onepage.png"></v-img>
-            <v-card-title>123</v-card-title>
-            <v-card-text>123</v-card-text>
+            <v-img :src="t.img"></v-img>
+            <v-card-title>{{t.title}}</v-card-title>
+            <v-card-text>{{t.text}}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -48,10 +48,14 @@
 export default {
   name: 'Home',
   data: () => ({
+    type2: [
+      { img: require('../assets/web/onepage.png'), title: '泰山寇汀咖啡', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
+      { img: require('../assets/web/garden1.png'), title: 'CSS Zen Garden', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+    ],
     type3: [
       { img: require('../assets/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/catchstar.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/gotogether.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+      { img: require('../assets/web/catchstar.png'), title: '捉 星 星！Catch Star', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
+      { img: require('../assets/web/gotogether.png'), title: '天堂見 We will see in Heaven', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
     ]
   })
 }
