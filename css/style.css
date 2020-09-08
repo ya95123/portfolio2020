@@ -78,6 +78,10 @@ html, body {
   height: 100%;
 }
 
+#app #navbar {
+  z-index: 1;
+}
+
 #app #footer {
   width: 100%;
   position: absolute;

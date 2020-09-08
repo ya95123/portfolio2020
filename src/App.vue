@@ -90,9 +90,6 @@
 <script>
 export default {
   name: 'App',
-  props: {
-    source: String
-  },
   data: () => ({
     drawer: false
   })
