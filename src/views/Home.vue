@@ -49,9 +49,9 @@ export default {
   name: 'Home',
   data: () => ({
     type3: [
-      { img: '/static/web/memoryPoker.png', title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: '/static/web/memoryPoker.png', title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: '/static/web/memoryPoker.png', title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+      { img: require('../../static/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
+      { img: require('../../static/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
+      { img: require('../../static/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
     ]
   })
 }
