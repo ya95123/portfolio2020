@@ -31,7 +31,7 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" class="text-center">網頁小遊戲</v-col>
-        <v-col cols="12" md="4" v-for="type in type3" :key="type">
+        <v-col cols="12" md="4" v-for="(type,idx) in type3" :key="idx">
           <v-card>
             <v-img :src="type.img"></v-img>
             <v-card-title>{{type.title}}</v-card-title>
