@@ -8,7 +8,12 @@
           <v-img src="../assets/web/d_hand_guesse.png" class="rounded"></v-img>
         </v-col>
         <v-col cols="12" md="6">
-          describe
+          <v-card-title class="pt-0">
+            狄斯俊之手 Decision Hand
+          </v-card-title>
+          <v-card-text class="text--black">
+            使用 Vue.js 搭配 Vuetify 製成的功能型網站，其功能為協助易有<u>選擇困難症的人</u>，透過簡易有趣的方式，加速做決定的過程，達到減少猶豫不決的效益，其中也特別設置了團體活動常見的轉盤、轉酒瓶、抽獎功能等。
+          </v-card-text>
         </v-col>
       </v-row>
     </v-container>
