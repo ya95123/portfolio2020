@@ -22,11 +22,11 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" class="text-center">網頁切版</v-col>
-        <v-col cols="12" md="4" v-for="(t,idx) in type2" :key="idx">
+        <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type2" :key="idx">
           <v-card>
-            <v-img :src="t.img"></v-img>
-            <v-card-title>{{t.title}}</v-card-title>
-            <v-card-text>{{t.text}}</v-card-text>
+            <v-img :src="type.img"></v-img>
+            <v-card-title>{{type.title}}</v-card-title>
+            <v-card-text>{{type.text}}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -36,7 +36,7 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" class="text-center">網頁小遊戲</v-col>
-        <v-col cols="12" md="4" v-for="(type,idx) in type3" :key="idx">
+        <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type3" :key="idx">
           <v-card>
             <v-img :src="type.img"></v-img>
             <v-card-title>{{type.title}}</v-card-title>

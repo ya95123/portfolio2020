@@ -4,8 +4,7 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import '../css/style.css'
 import vuescroll from 'vuescroll'
-
-Vue.config.productionTip = false
+import Photoswipe from 'vue-pswipe'
 
 Vue.use(vuescroll, {
   // 在這裡設置全局默認配置
@@ -42,6 +41,11 @@ Vue.use(vuescroll, {
     }
   }
 })
+
+// 照片點擊放大
+Vue.use(Photoswipe)
+
+Vue.config.productionTip = false
 
 new Vue({
   router,
