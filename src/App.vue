@@ -79,7 +79,16 @@
         class="d-flex justify-center align-center"
         color="transparent"
       >
-        <span>&copy; {{ new Date().getFullYear() }}</span>
+        <v-btn icon class="pt-0">
+          <a
+            href="https://github.com/ya95123/portfolio"
+            target="_blank"
+            style="text-decoration:none;"
+          >
+            <v-icon color="#333">mdi-github</v-icon>
+          </a>
+          </v-btn>
+        <span>Alfred Dai &copy; {{ new Date().getFullYear() }}</span>
       </v-footer>
 
       <router-view/>
