@@ -49,13 +49,43 @@ export default {
   name: 'Home',
   data: () => ({
     type2: [
-      { img: require('../assets/web/onepage.png'), title: '泰山寇汀咖啡', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/garden_black.png'), title: 'CSS Zen Garden', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+      {
+        img: require('../assets/web/onepage.png'),
+        title: '泰山寇汀咖啡莊園',
+        text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊',
+        github: 'https://github.com/ya95123/bs-onePage',
+        site: 'https://ya95123.github.io/bs-onePage/'
+      },
+      {
+        img: require('../assets/web/garden_black.png'),
+        title: 'CSS Zen Garden',
+        text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊',
+        github: 'https://github.com/ya95123/css-zen-garden',
+        site: 'https://ya95123.github.io/css-zen-garden/'
+      }
     ],
     type3: [
-      { img: require('../assets/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/catchstar.png'), title: '捉 星 星！Catch Star', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/gotogether.png'), title: '天堂見 We will see in Heaven', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+      {
+        img: require('../assets/web/memoryPoker.png'),
+        title: '記憶 Poker',
+        text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊',
+        github: 'https://github.com/ya95123/game-memoryPoker',
+        site: 'https://ya95123.github.io/game-memoryPoker/'
+      },
+      {
+        img: require('../assets/web/catchstar.png'),
+        title: '捉 星 星！Catch Star',
+        text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊',
+        github: 'https://github.com/ya95123/game-catchStar',
+        site: 'https://ya95123.github.io/game-catchStar/'
+      },
+      {
+        img: require('../assets/web/gotogether.png'),
+        title: '天堂見 We will see in Heaven',
+        text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊',
+        github: 'https://github.com/ya95123/game-goTogether',
+        site: 'https://ya95123.github.io/game-goTogether/'
+      }
     ]
   })
 }
