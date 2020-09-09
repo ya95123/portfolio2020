@@ -50,7 +50,7 @@ export default {
   data: () => ({
     type2: [
       { img: require('../assets/web/onepage.png'), title: '泰山寇汀咖啡', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
-      { img: require('../assets/web/garden1.png'), title: 'CSS Zen Garden', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
+      { img: require('../assets/web/garden1.PNG'), title: 'CSS Zen Garden', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' }
     ],
     type3: [
       { img: require('../assets/web/memoryPoker.png'), title: '記憶 Poker', text: '很適合三五好友相聚時，可以一起玩的小遊戲 😊', site: 'ya95123.github.io/game-memorypoker/' },
