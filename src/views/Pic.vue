@@ -73,7 +73,7 @@ export default {
         title: '酒廣告 版型 2'
       },
       {
-        img: require('../assets/pic/wink_bottle.png'),
+        img: require('../assets/pic/wink_bottle.jpg'),
         title: '酒廣告 瓶身'
       }
     ],
@@ -95,6 +95,10 @@ export default {
       {
         img: require('../assets/pic/bug.jpg'),
         title: '甲蟲畫作'
+      },
+      {
+        img: require('../assets/pic/oil_brand.jpg'),
+        title: 'Olive Oil 品牌標示仿作'
       },
       {
         img: require('../assets/pic/marquese-chriss-dunking.jpg'),
