@@ -11,6 +11,30 @@
           <v-card-title class="pt-0">
             狄斯俊之手 Decision Hand
           </v-card-title>
+          <a
+            href="https://ya95123.github.io/vue-decisionHand/#/"
+            target="_blank"
+            class="icon"
+          >
+            <v-btn icon class="ml-2" color="#6AC7E6">
+              <v-icon color="#6AC7E6">
+                mdi-link-variant
+              </v-icon>
+            </v-btn>
+            <span class="green--text">網站連結</span>
+          </a>
+          <a
+            href="https://github.com/ya95123/vue-decisionHand"
+            target="_blank"
+            class="icon"
+          >
+            <v-btn icon class="ml-2" color="#6AC7E6">
+              <v-icon color="#6AC7E6">
+                mdi-github
+              </v-icon>
+            </v-btn>
+            <span class="green--text">GitHub</span>
+          </a>
           <v-card-text class="text--black">
             使用 Vue.js 搭配 Vuetify 製成的功能型網站，其功能為協助易有<u>選擇困難症的人</u>，透過簡易有趣的方式，加速做決定的過程，達到減少猶豫不決的效益，其中也特別設置了團體活動常見的轉盤、轉酒瓶、抽獎功能等。
           </v-card-text>
@@ -25,7 +49,34 @@
         <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type2" :key="idx">
           <v-card>
             <v-img :src="type.img"></v-img>
-            <v-card-title>{{type.title}}</v-card-title>
+            <v-card-title>
+              <!-- 標題 -->
+              {{type.title}}
+              <!-- 連結 -->
+              <a
+                :href="type.website"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon class="ml-2" color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-link-variant
+                  </v-icon>
+                </v-btn>
+              </a>
+              <a
+                :href="type.github"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-github
+                  </v-icon>
+                </v-btn>
+              </a>
+            </v-card-title>
+            <!-- 內文 -->
             <v-card-text>{{type.text}}</v-card-text>
           </v-card>
         </v-col>
@@ -39,7 +90,33 @@
         <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type3" :key="idx">
           <v-card>
             <v-img :src="type.img"></v-img>
-            <v-card-title>{{type.title}}</v-card-title>
+            <v-card-title>
+              <!-- 標題 -->
+              {{type.title}}
+              <!-- 連結 -->
+              <a
+                :href="type.website"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon class="ml-2" color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-link-variant
+                  </v-icon>
+                </v-btn>
+              </a>
+              <a
+                :href="type.github"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-github
+                  </v-icon>
+                </v-btn>
+              </a>
+            </v-card-title>
             <v-card-text>{{type.text}}</v-card-text>
           </v-card>
         </v-col>
