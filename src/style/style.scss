@@ -83,6 +83,13 @@ $bBlue:#6AC7E6;
     }
    }
 
+  // .section{
+  //   height: 70vmin;
+  // }
+
+   .type{
+    margin: 1.7rem 0 1rem 0;
+  }
  }
 }
 
@@ -115,7 +122,11 @@ html,body{
 
   .spacerB{
     width: 100%;
-    height: 56px;
+    height: 5rem;
+  }
+
+  .type{
+    font-size: 1.7rem;
   }
 }
 

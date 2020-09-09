@@ -2,9 +2,9 @@
   <div id="pic">
     <!-- <Photoswipe> -->
       <!-- type1：廣告 -->
-      <v-container>
+      <v-container class="section">
         <v-row class="justify-center">
-          <v-col cols="12" class="text-center">廣告</v-col>
+          <v-col cols="12" class="type text-center"># 廣告</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type1" :key="idx">
             <v-card>
@@ -17,9 +17,9 @@
       </v-container>
 
       <!-- type2：Banner -->
-      <v-container>
+      <v-container class="section">
         <v-row class="justify-center">
-          <v-col cols="12" class="text-center">Banner</v-col>
+          <v-col cols="12" class="type text-center"># Banner</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type2" :key="idx">
             <v-card>
@@ -30,12 +30,11 @@
           </v-col>
         </v-row>
       </v-container>
-    <div class="spacerB"></div>
 
     <!-- type3：其他設計 -->
-      <v-container>
+      <v-container class="section">
         <v-row class="justify-center">
-          <v-col cols="12" class="text-center">其他設計</v-col>
+          <v-col cols="12" class="type text-center"># 其他設計</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type3" :key="idx">
             <v-card>

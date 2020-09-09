@@ -65,6 +65,9 @@
   #app #navbar #ham {
     display: none;
   }
+  #app .type {
+    margin: 1.7rem 0 1rem 0;
+  }
 }
 
 html, body {
@@ -95,7 +98,11 @@ html, body {
 
 #app .spacerB {
   width: 100%;
-  height: 56px;
+  height: 5rem;
+}
+
+#app .type {
+  font-size: 1.7rem;
 }
 
 #home .icon {
