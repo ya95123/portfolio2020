@@ -5,7 +5,7 @@
       <v-row class="justify-center">
         <v-col cols="12" class="type text-center"># 功能型網站</v-col>
         <v-col cols="12" md="6">
-          <v-img src="../assets/web/d_hand_guesse.png" class="rounded"></v-img>
+          <v-img src="../assets/web/d_hand_guesse.png" class="rounded card"></v-img>
         </v-col>
         <v-col cols="12" md="6">
           <v-card-title class="pt-0">
@@ -47,7 +47,7 @@
       <v-row class="justify-center">
         <v-col cols="12" class="type text-center"># 網頁切版</v-col>
         <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type2" :key="idx">
-          <v-card>
+          <v-card class="card">
             <v-img :src="type.img"></v-img>
             <v-card-title>
               <!-- 標題 -->
@@ -88,7 +88,7 @@
       <v-row class="justify-center">
         <v-col cols="12" class="type text-center"># 網頁小遊戲</v-col>
         <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type3" :key="idx">
-          <v-card>
+          <v-card class="card">
             <v-img :src="type.img"></v-img>
             <v-card-title>
               <!-- 標題 -->

@@ -105,6 +105,18 @@ html, body {
   font-size: 1.7rem;
 }
 
+#app .card {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#app .card:hover {
+  -webkit-filter: drop-shadow(0 0 0.35rem #999);
+          filter: drop-shadow(0 0 0.35rem #999);
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 #home .icon {
   text-decoration: none;
 }

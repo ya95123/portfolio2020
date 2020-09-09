@@ -7,7 +7,7 @@
           <v-col cols="12" class="type text-center"># 廣告</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type1" :key="idx">
-            <v-card>
+            <v-card class="card">
               <v-img :src="type.img" v-pswp="type.img">
               </v-img>
                 <v-card-title>{{type.title}}</v-card-title>
@@ -22,7 +22,7 @@
           <v-col cols="12" class="type text-center"># Banner</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type2" :key="idx">
-            <v-card>
+            <v-card class="card">
               <v-img :src="type.img" v-pswp="type.img">
               </v-img>
                 <v-card-title>{{type.title}}</v-card-title>
@@ -37,7 +37,7 @@
           <v-col cols="12" class="type text-center"># 其他設計</v-col>
           <!-- 卡片 -->
           <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type3" :key="idx">
-            <v-card>
+            <v-card class="card">
               <v-img :src="type.img" v-pswp="type.img">
               </v-img>
                 <v-card-title>{{type.title}}</v-card-title>
