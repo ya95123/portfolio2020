@@ -37,6 +37,8 @@
           </a>
           <v-card-text class="text--black">
             使用 Vue.js 搭配 Vuetify 製成的功能型網站，其功能為協助易有<u>選擇困難症的人</u>，透過簡易有趣的方式，加速做決定的過程，達到減少猶豫不決的效益，其中也特別設置了團體活動常見的轉盤、轉酒瓶、抽獎功能等。
+            <br><br>
+            並加上 RWD 分為電腦與手機平板介面，以及增添 PWA 功能，可至網址右側的 + 號將網頁下載成應用程式。
           </v-card-text>
         </v-col>
       </v-row>
@@ -134,7 +136,7 @@ export default {
       {
         img: require('../assets/web/onepage.jpg'),
         title: '泰山寇汀咖啡莊園',
-        text: '用 Bootstrap 搭配 jQuery 外部套件做成的一頁式介紹網頁。',
+        text: '用 Bootstrap 搭配 jQuery 外部套件做成含有 RWD 的一頁式介紹網頁。',
         github: 'https://github.com/ya95123/bs-onePage',
         website: 'https://ya95123.github.io/bs-onePage/'
       },
