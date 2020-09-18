@@ -124,6 +124,46 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <!-- type4：API 串接 -->
+    <v-container class="section">
+      <v-row class="justify-center">
+        <v-col cols="12" class="type text-center"># API 串接</v-col>
+        <v-col cols="12" md="4" sm="6" v-for="(type,idx) in type4" :key="idx">
+          <v-card class="card">
+            <v-img :src="type.img"></v-img>
+            <v-card-title>
+              <!-- 標題 -->
+              {{type.title}}
+              <!-- 連結 -->
+              <a
+                :href="type.website"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon class="ml-2" color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-link-variant
+                  </v-icon>
+                </v-btn>
+              </a>
+              <a
+                :href="type.github"
+                target="_blank"
+                class="icon"
+              >
+                <v-btn icon color="#6AC7E6">
+                  <v-icon color="#6AC7E6">
+                    mdi-github
+                  </v-icon>
+                </v-btn>
+              </a>
+            </v-card-title>
+            <v-card-text>{{type.text}}</v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
     <div class="spacerB"></div>
   </div>
 </template>
@@ -169,6 +209,15 @@ export default {
         text: '使用 JavaScript 搭配其 settimeout 功能做成的類似打地鼠遊戲，另外添上了排行榜功能。',
         github: 'https://github.com/ya95123/game-goTogether',
         website: 'https://ya95123.github.io/game-goTogether/'
+      }
+    ],
+    type4: [
+      {
+        img: require('../assets/web/commercial_api.jpg'),
+        title: '全球商機資訊',
+        text: '使用 vue.js 搭配 vuetify 做成的簡易 API 串接資訊網站，資料來源為「台灣經濟部國際貿易局」。',
+        github: 'https://github.com/ya95123/commercial-api',
+        website: 'https://ya95123.github.io/commercial-api/'
       }
     ]
   })
