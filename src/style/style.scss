@@ -6,26 +6,28 @@ $bOrange:#FEB25E;
 $bBlue:#6AC7E6;
 
 // 平板尺寸以下
-@media (max-width: 960px) { 
-  #app{
-    #navbar{
-      #list{
+@media (max-width: 960px) {
+  #app {
+    #navbar {
+      #list {
         display: none;
       }
-      #ham{
+
+      #ham {
         display: block;
       }
     }
   }
- }
+}
 
 //  電腦尺寸以上
-@media (min-width: 961px) { 
- #app{
-   #navbar{
-     #list{
-       display: block;
-        .router{
+@media (min-width: 961px) {
+  #app {
+    #navbar {
+      #list {
+        display: block;
+
+        .router {
           text-decoration: none;
           color: #131313;
           margin-left: 2rem;
@@ -33,12 +35,12 @@ $bBlue:#6AC7E6;
           position: relative;
           transition: 0.3s ease;
 
-          &:focus{
+          &:focus {
             color: $bRed;
             font-weight: 700;
           }
 
-          &::before{
+          &::before {
             content: '';
             width: 0;
             height: 0.13rem;
@@ -47,13 +49,14 @@ $bBlue:#6AC7E6;
             bottom: 0;
             transition: width 0.3s ease;
           }
-            /* !轉場：往右長長 */
-            &:hover::before{
+
+          /* !轉場：往右長長 */
+          &:hover::before {
             width: 100%;
             background: $bBlue;
           }
 
-          &::after{
+          &::after {
             content: '';
             width: 0;
             height: 0.13rem;
@@ -65,82 +68,86 @@ $bBlue:#6AC7E6;
           }
 
           /* !回場：往右變透明 */
-          &:hover::after{
+          &:hover::after {
             width: 100%;
-            background:transparent;
+            background: transparent;
           }
-          
-          .list-icon{
+
+          .list-icon {
             color: $bBlue;
-            &:focus{
+
+            &:focus {
               color: $bRed;
             }
           }
         }
-     }
-     #ham{
-      display: none;
+      }
+
+      #ham {
+        display: none;
+      }
     }
-   }
 
-  // .section{
-  //   height: 70vmin;
-  // }
+    // .section{
+    //   height: 70vmin;
+    // }
 
-   .type{
-    margin: 1.7rem 0 1rem 0;
+    .type {
+      margin: 1.7rem 0 1rem 0;
+    }
   }
- }
 }
 
 // 通用 --------------
-html,body{
+html,
+body {
   width: 100vw;
   height: 100vh;
   // 為了把原始 Scroll bar 去掉
   overflow: hidden;
 }
 
-#app{
+#app {
   width: 100%;
   height: 100%;
 
-  #navbar{
+  #navbar {
     z-index: 1;
   }
 
-  #footer{
+  #footer {
     width: 100%;
     position: absolute;
     bottom: 0%;
   }
 
-  .spacerT{
+  .spacerT {
     width: 100%;
     height: 56px;
   }
 
-  .spacerB{
+  .spacerB {
     width: 100%;
     height: 5rem;
   }
 
-  .type{
+  .type {
     font-size: 1.7rem;
   }
 
-  .card{
+  .card {
     transition: 0.2s;
-    &:hover{
+
+    &:hover {
       filter: drop-shadow(0 0 0.35rem #999);
-      margin-top: -0.3rem;
-      margin-bottom: 0.3rem;
+      // margin-top: -0.3rem;
+      // margin-bottom: 0.3rem;
     }
   }
 }
 
-#home{
-  .icon{
-    text-decoration:none;
+#home {
+  .icon {
+    text-decoration: none;
   }
 }
